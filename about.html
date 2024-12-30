@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us - Restaurant</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: rgb(68, 66, 66);
+            color: rgb(237, 172, 30);
+        }
+
+        header {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color:#FFD700 ;
+            color: rgb(68, 66, 66);
+            padding: 20px;
+            height: 90px;
+            font-size: 20px;
+        }
+     
+        .content {
+            margin: 10px;
+            padding: 10px;
+            background-color: rgb(68, 66, 66);
+            border: 2px solid rgb(237, 172, 30);
+            border-radius: 10px;
+            
+        }
+
+        .content h2 {
+            text-align: center;
+            color: #FFD700;
+        }
+
+        .content p {
+            line-height: 1.8;
+            color: #FFD700;
+            text-align: justify;
+        }
+
+        .chef-gallery {
+            display: flex;
+            justify-content: center;
+            gap: 70px;
+            margin-top: 20px;
+            color: #FFD700;
+            
+        }
+
+        .chef-card {
+            text-align: center;
+            background-color:rgb(68, 66, 66);
+            border: 2px solid rgb(237, 172, 30);
+            border-radius: 8px;
+            padding: 10px;
+        }
+
+        .chef-card img {
+            width: 150px;
+            height: 150px;
+            border: 3px solid rgb(237, 172, 30);
+            border-radius: 60%;
+        }
+
+       
+
+        .content button {
+            display: block;
+            margin: 20px auto;
+            height: 40px;
+            background-color: rgb(237, 172, 30);
+            color: #000;
+           border: solid #FFC107;
+            border-radius: 4px;
+            font-weight: bold;
+        }
+
+        .content button:hover {
+            background-color: transparent;
+        }
+
+        footer {
+            position: fixed;
+            text-align: center;
+            padding: 10px;
+            background-color: #FFD700;
+            color: #000;
+            bottom: 0;
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Welcome to Delicious Bites</h1>
+    </header>
+
+    <div class="content">
+        <h2>About Us</h2>
+        <p>
+            At Delicious Bites, we take pride in offering an unparalleled dining experience to our cherished patrons. Established in 2005, our journey has been fueled by a passion for culinary excellence and a commitment to creating delightful moments with every meal. Over the years, we have cultivated a reputation for delivering not just food, but a celebration of flavors, where every dish tells a story of quality, tradition, and innovation.
+
+           Our focus has always been on crafting a welcoming atmosphere, where guests feel at home, whether they’re enjoying a casual meal, marking a special occasion, or simply indulging in the joy of good food. From thoughtfully curated recipes to impeccable presentation, every detail reflects our dedication to exceeding expectations and leaving a lasting impression.
+        </p>
+        <p>
+            Our chefs bring creativity and expertise to every dish, using only the finest and freshest ingredients. Each item on our menu is thoughtfully crafted to celebrate diverse flavors from around the world, ensuring there’s something special for every palate.
+
+            Whether you're stopping by for a quick bite, a family gathering, or a memorable celebration, we aim to make your visit truly exceptional. Our warm and welcoming atmosphere, combined with attentive service, ensures an experience that goes beyond just food.
+        </p>
+
+        <h2>Meet Our Chefs</h2>
+        <div class="chef-gallery">
+            <div class="chef-card">
+                <img src="download (6).jpg" alt="Chef 1">  
+                <h3>Chef John Doe</h3>  
+            </div>
+            <div class="chef-card">
+                <img src="download (7).jpg" alt="Chef 2">
+                <h3>Chef Jane Smith</h3>
+            </div>
+            <div class="chef-card">
+                <img src="download 8.jpg" alt="Chef 3">
+                <h3>Chef Michael Brown</h3>
+            </div>
+            <div class="chef-card">
+                <img src="download 9.jpg" alt="Chef 4">
+                <h3>Chef Emily Davis</h3>
+            </div>
+            <div class="chef-card">
+                <img src="download 10.jpg" alt="Chef 5">
+                <h3>Chef Sarah Wilson</h3>
+            </div>
+        </div>
+
+        <button onclick="showMessage()">Learn More</button>
+    </div>
+
+    <footer>
+        &copy; 2024 Delicious Bites. All Rights Reserved.
+    </footer>
+
+    <script>
+        function showMessage() {
+            alert("Thank you for your interest! Visit us to know more.");
+        }
+    </script>
+</body>
+</html>

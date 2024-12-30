@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Menu - Restaurant</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: rgb(68, 66, 66);
+            color: rgb(237, 172, 30);
+        }
+
+        header {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: #FFD700;
+            color: rgb(68, 66, 66);
+            padding: 20px;
+            text-align: center;
+            height: 90px;
+            
+        }
+        header h1 {
+            margin: 0;
+            font-size: 2.5em;
+        }
+        
+
+        .content {
+            max-width: 1200px;
+            margin: 20px auto;
+            background-color: rgb(68, 66, 66);
+            padding: 20px;
+            border: 2px solid rgb(237, 172, 30);
+            border-radius: 10px;
+        }
+
+        .content h2 {
+            text-align: center;
+            color: #FFD700;
+        }
+
+        .menu-section {
+            margin: 20px 0;
+        }
+
+        .menu-section h3 {
+            color: #FFD700;
+            border-bottom: 2px solid rgb(237, 172, 30);
+            padding-bottom: 5px;
+        }
+
+        .menu-items {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+            gap: 20px;
+            padding: 0;
+        }
+
+        .menu-item {
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-start;
+            align-items: center;
+            padding: 10px;
+            background-color: rgb(68, 66, 66);
+            border: 1px solid rgb(237, 172, 30);
+            border-radius: 8px;
+        }
+
+        .menu-item img {
+            width: 150px;
+            height: 150px;
+            object-fit: cover;
+            margin-bottom: 10px;
+            border-radius: 8px;
+        }
+
+        .menu-item p {
+            color: #FFD700;
+            margin-bottom: 5px;
+        }
+
+        .menu-item p.price {
+            font-size: 1.2em;
+        }
+
+        footer {
+            position: fixed;
+            text-align: center;
+            padding: 10px;
+            background-color: #FFD700;
+            color: #000;
+            bottom: 0;
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Our Menu</h1>
+    </header>
+
+    <div class="content">
+        <h2>Delicious Dishes</h2>
+
+        <div class="menu-section">
+            <h3>Starters</h3>
+            <div class="menu-items">
+                <div class="menu-item">
+                    <img src="download 11.jpg" alt="Garlic Bread">
+                    <p>Garlic Bread</p>
+                    <p class="price">$5.00</p>
+                </div>
+                <div class="menu-item">
+                    <img src="download 12.jpg" alt="Tomato Soup">
+                    <p>Tomato Soup</p>
+                    <p class="price">$4.50</p>
+                </div>
+                <div class="menu-item">
+                    <img src="download 13.jpg" alt="Caesar Salad">
+                    <p>Caesar Salad</p>
+                    <p class="price">$6.50</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="menu-section">
+            <h3>Main Courses</h3>
+            <div class="menu-items">
+                <div class="menu-item">
+                    <img src="download 14.jpg" alt="Grilled Chicken">
+                    <p>Grilled Chicken</p>
+                    <p class="price">$12.00</p>
+                </div>
+                <div class="menu-item">
+                    <img src="download 15.jpg" alt="Beef Steak">
+                    <p>Beef Steak</p>
+                    <p class="price">$15.00</p>
+                </div>
+                <div class="menu-item">
+                    <img src="download 16.jpg" alt="Vegetarian Pasta">
+                    <p>Vegetarian Pasta</p>
+                    <p class="price">$10.00</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="menu-section">
+            <h3>Desserts</h3>
+            <div class="menu-items">
+                <div class="menu-item">
+                    <img src="download 17.jpg" alt="Chocolate Cake">
+                    <p>Chocolate Cake</p>
+                    <p class="price">$6.00</p>
+                </div>
+                <div class="menu-item">
+                    <img src="download 18.jpg" alt="Ice Cream Sundae">
+                    <p>Ice Cream Sundae</p>
+                    <p class="price">$5.50</p>
+                </div>
+                <div class="menu-item">
+                    <img src="download 19.jpg" alt="Fruit Salad">
+                    <p>Fruit Salad</p>
+                    <p class="price">$4.00</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="menu-section">
+            <h3>Beverages</h3>
+            <div class="menu-items">
+                <div class="menu-item">
+                    <img src="download 20.jpg" alt="Coffee">
+                    <p>Coffee</p>
+                    <p class="price">$3.00</p>
+                </div>
+                <div class="menu-item">
+                    <img src="download 21.jpg" alt="Tea">
+                    <p>Tea</p>
+                    <p class="price">$2.50</p>
+                </div>
+                <div class="menu-item">
+                    <img src="download 22.jpg" alt="Fresh Juice">
+                    <p>Fresh Juice</p>
+                    <p class="price">$4.00</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        &copy; 2024 Delicious Bites. All Rights Reserved.
+    </footer>
+</body>
+</html>

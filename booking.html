@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Book a Table</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: rgb(68, 66, 66);
+            color: #ffd700;
+        }
+        header {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: #FFD700;
+            padding: 20px;
+            color: rgb(68, 66, 66);
+            height: 90px;
+        }
+        header h1 {
+            margin: 0;
+            font-size: 2.5em;
+        }
+        .container {
+            display: flex;
+            margin: 50px auto;
+            max-width: 900px;
+            padding: 20px;
+            background: #fff;
+            color: #000;
+            border-radius: 15px;
+            gap: 70px;
+
+            
+        }
+        .form-section {
+          width: 50%;
+           
+        }
+        .image-section{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+       
+        .image-section img {
+            width: 300px;
+            border-radius: 15px;
+        }
+        h2 {
+            text-align: center;
+            color: #000;
+        }
+      
+
+        input {
+            width: 400px;
+            margin-bottom: 20px;
+            padding: 10px;
+            font-size: 16px;
+            border: 2px solid gray;
+            border-radius: 5px;
+           
+        }
+        select{
+            margin-bottom: 20px;
+            padding: 10px;
+            width: 420px;
+            border: 2px solid gray;
+            border-radius: 5px;
+            height: 45px;
+         }
+        button {
+            width: 420px;
+            padding: 10px;
+            font-size: 16px;
+            background-color: #000;
+            color: #ffd700;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+        button:hover {
+            background-color: #333;
+        }
+        footer {
+            position: fixed;
+            text-align: center;
+            padding: 10px;
+            background-color: #FFD700;
+            color: #000;
+            bottom: 0;
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Welcome to Delicious Bites</h1>
+    </header>
+
+    <div class="container">
+        <div class="form-section">
+         <h2>Book a Table</h2>
+        <form id="bookingForm">
+        <label for="name">Full Name:</label><br>
+        <input type="text" placeholder="Enter your name" ><br>
+
+        <label for="email">Email:</label><br>
+        <input type="email" placeholder="Enter your email" ><br>
+
+        <label for="phone">Phone Number:</label><br>
+        <input type="tel" placeholder="Enter your phone number" ><br>
+
+        <label for="date">Date:</label><br>
+         <input type="date" ><br>
+
+         <label for="time">Time:</label><br>
+         <input type="time"  ><br>
+
+         <label for="guests">Number of Guests:</label><br>
+             <select><br>
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5</option>
+                    <option value="6">6</option>
+                    <option value="7">7</option>
+                    <option value="8">8</option>
+                </select><br>
+
+                <button >Book Now</button>
+            </form>
+        </div>
+        <div class="image-section">
+            <img src="download (5).jpg" alt="Delicious Food">
+        </div>
+    </div>
+    <footer>
+        &copy; 2024 Delicious Bites. All Rights Reserved.
+    </footer>
+
+    <script>
+        document.getElementById("bookingForm").addEventListener("submit", function(event) {
+            event.preventDefault();
+            alert("Your form is submitted");
+           
+        });
+    </script>
+</body>
+</html>
